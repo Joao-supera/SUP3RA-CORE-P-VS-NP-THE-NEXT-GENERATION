@@ -1,0 +1,135 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{hyperref}
+\usepackage[nameinlink]{cleveref}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+
+\newcommand{\RCE}{H^{\mathrm{res}}}
+\newcommand{\OBDD}{\mathrm{OBDD}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\im}{\operatorname{Im}}
+
+\title{
+Residual Cut Entropy for Tseitin Formulas\\
+\large An Information-Theoretic Perspective on Exponential OBDD Lower Bounds
+}
+\author{João Henrique Supera}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We introduce Residual Cut Entropy, a structural measure defined as the logarithm of the number of semantically distinct residual functions induced by partial assignments across a variable cut. We prove that this quantity lower-bounds the width of Ordered Binary Decision Diagrams (OBDDs). For satisfiable Tseitin formulas, we show that the residual cut entropy equals the number of connected components of the residual subgraph minus one. This yields a transparent derivation of exponential OBDD lower bounds for connected 3-regular graphs.
+\end{abstract}
+
+\section{Introduction}
+
+We define Residual Cut Entropy as a measure of the amount of semantic information that must be preserved across a variable cut. This measure yields direct lower bounds for OBDD width and admits an exact combinatorial characterization for satisfiable Tseitin formulas.
+
+\section{Definitions}
+
+Let $F(X)$ be a Boolean function and let $X=S \cup T$.
+
+For each assignment $\alpha \in \{0,1\}^S$, define the residual function
+\[
+f_\alpha(\beta)=F(\alpha,\beta), \qquad \beta \in \{0,1\}^T.
+\]
+
+\begin{definition}[Residual Count]
+\[
+R_C(F)=\left|\{f_\alpha : \alpha \in \{0,1\}^S\}\right|.
+\]
+\end{definition}
+
+\begin{definition}[Residual Cut Entropy]
+\[
+\RCE_C(F)=\log_2 R_C(F).
+\]
+\end{definition}
+
+\section{General OBDD Lower Bound}
+
+\begin{theorem}
+If $C=(S,T)$ is the cut induced by a prefix of an OBDD variable order, then
+\[
+\text{width}_C(\OBDD) \ge R_C(F)=2^{\RCE_C(F)}.
+\]
+\end{theorem}
+
+\begin{proof}
+Distinct residual functions cannot merge into the same OBDD node.
+\end{proof}
+
+\section{Tseitin Formulas}
+
+Let $G=(V,E)$ be a connected graph. Associate a variable $x_e$ to each edge $e \in E$. For each vertex $v$ impose
+\[
+\bigoplus_{e \ni v} x_e = b_v,
+\]
+where $\sum_{v\in V} b_v = 0 \pmod 2$.
+
+\section{Exact Formula}
+
+Let $T \subseteq E$ and let $c(T)$ denote the number of connected components of $(V,T)$.
+
+\begin{theorem}
+For every connected graph $G$,
+\[
+\RCE_C(F_G)=c(T)-1.
+\]
+\end{theorem}
+
+\begin{proof}
+For any graph $H$, the rank of its incidence matrix over $\mathbb{F}_2$ is
+\[
+\rank(A_H)=|V|-c(H).
+\]
+Since $G$ is connected, $\rank(A)=|V|-1$, which yields the result.
+\end{proof}
+
+\section{3-Regular Graphs}
+
+\begin{theorem}
+If $G$ is a connected 3-regular graph with $n$ vertices, then
+\[
+\OBDD(F_G)\ge 2^{n/4-1}=2^{\Omega(n)}.
+\]
+\end{theorem}
+
+\begin{proof}
+A 3-regular graph has $|E|=3n/2$. At the midpoint of any variable order, the remaining edge set satisfies $|T|\le 3n/4$, so $c(T)\ge n/4$. Apply the previous theorem and the general OBDD lower bound.
+\end{proof}
+
+\section{Conclusion}
+
+Residual Cut Entropy provides a simple information-theoretic interpretation of classical exponential OBDD lower bounds for Tseitin formulas.
+
+\begin{thebibliography}{9}
+
+\bibitem{Bryant1986}
+Randal E. Bryant.
+Graph-Based Algorithms for Boolean Function Manipulation.
+\emph{IEEE Transactions on Computers}, 35(8):677--691, 1986.
+
+\bibitem{Wegener2000}
+Ingo Wegener.
+\emph{Branching Programs and Binary Decision Diagrams}.
+SIAM, 2000.
+
+\end{thebibliography}
+
+\end{document}

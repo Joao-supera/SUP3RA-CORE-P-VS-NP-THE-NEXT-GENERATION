@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "Residual Cut Entropy for Tseitin Formulas: An Information-Theoretic Perspective on Exponential OBDD Lower Bounds"
+message: "If you use this work, please cite it."
+type: article
+authors:
+  - family-names: "Supera"
+    given-names: "João Henrique"
+date-released: 2026-05-19
+license: "CC-BY-4.0"
+repository-code: "https://github.com/Joao-supera/residual-cut-entropy"
