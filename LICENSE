@@ -1,8 +1,110 @@
-Creative Commons Attribution 4.0 International (CC BY 4.0)
+# 📘 Residual Cut Entropy
 
-Copyright (c) 2026 João Henrique Supera
+**Residual Cut Entropy for Tseitin Formulas:**  
+**An Information-Theoretic Perspective on Exponential OBDD Lower Bounds**
 
-This work is licensed under the Creative Commons Attribution 4.0 International License.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20300226.svg)](https://doi.org/10.5281/zenodo.20300226)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![GitHub release](https://img.shields.io/github/v/release/Joao-supera/residual-cut-entropy)](https://github.com/Joao-supera/residual-cut-entropy/releases)
+[![arXiv](https://img.shields.io/badge/arXiv-submitted-b31b1b.svg)](https://arxiv.org)
 
-To view a copy of this license, visit:
-https://creativecommons.org/licenses/by/4.0/
+---
+
+## 📖 Overview
+
+This repository contains the manuscript:
+
+> **Residual Cut Entropy for Tseitin Formulas:  
+> An Information-Theoretic Perspective on Exponential OBDD Lower Bounds**
+
+The paper introduces **Residual Cut Entropy (RCE)**, an information-theoretic invariant that quantifies the number of semantically distinct residual Boolean functions induced by a variable partition.
+
+This framework yields:
+
+- A general structural lower bound for OBDD width.
+- An exact formula for Tseitin formulas.
+- A concise derivation of classical exponential lower bounds.
+- A unifying entropy-based interpretation of branching-program complexity.
+
+---
+
+## 🧠 Main Result
+
+For a Tseitin formula on a connected graph \( G=(V,E) \) and edge partition \( E=L \cup R \):
+
+\[
+\mathrm{RCE}(L)
+=
+|V_{\mathrm{cut}}|-c(G[L])+1
+\]
+
+where:
+
+- \( V_{\mathrm{cut}} \): vertices incident to both \(L\) and \(R\);
+- \( c(G[L]) \): number of connected components of the left subgraph.
+
+Consequently:
+
+\[
+\mathrm{OBDD\ Width}(L)
+\ge
+2^{\mathrm{RCE}(L)}.
+\]
+
+---
+
+## 🚀 Key Consequence
+
+For bounded-degree expander graphs:
+
+\[
+\mathrm{RCE}(L)=\Omega(n),
+\]
+
+which implies:
+
+\[
+\mathrm{OBDD\ Size}
+=
+2^{\Omega(n)}.
+\]
+
+This recovers the classic lower bound of Bryant (1986) through a clean information-theoretic argument.
+
+---
+
+## 📂 Repository Contents
+
+| File | Description |
+|------|------|
+| `paper.tex` | LaTeX source of the manuscript |
+| `Paper.pdf` | Compiled PDF |
+| `README.md` | Project overview |
+| `LICENSE` | CC BY 4.0 license |
+| `CITATION.cff` | Citation metadata |
+
+---
+
+## 📥 Download
+
+### Latest release
+https://github.com/Joao-supera/residual-cut-entropy/releases/latest
+
+### Direct PDF
+https://github.com/Joao-supera/residual-cut-entropy/releases/latest/download/Paper.pdf
+
+---
+
+## 📚 Citation
+
+If you use this work, cite:
+
+```bibtex
+@misc{supera2026residual,
+  author       = {João Henrique de Souza Batista},
+  title        = {Residual Cut Entropy for Tseitin Formulas:
+                  An Information-Theoretic Perspective on Exponential OBDD Lower Bounds},
+  year         = {2026},
+  doi          = {10.5281/zenodo.20300226},
+  url          = {https://doi.org/10.5281/zenodo.20300226}
+}
