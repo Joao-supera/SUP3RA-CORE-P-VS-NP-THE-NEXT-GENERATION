@@ -3,9 +3,7 @@
 ## Residual Cut Entropy for Tseitin Formulas
 
 ### An Information-Theoretic Perspective on Exponential OBDD Lower Bounds
-
 [![DOI](https://zenodo.org/badge/1243877803.svg)](https://doi.org/10.5281/zenodo.20300225)
-
 **Repository:** https://github.com/Joao-supera/SUP3RA-CORE-P-VS-NP-THE-NEXT-GENERATION
 
 ---
