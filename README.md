@@ -1,24 +1,16 @@
 # 📘 SUP3RA-CORE-P-VS-NP-THE-NEXT-GENERATION™
 
-<div align="center">
-
 ## Residual Cut Entropy for Tseitin Formulas
 
 ### An Information-Theoretic Perspective on Exponential OBDD Lower Bounds
-
-<br>
 
 [![DOI](https://zenodo.org/badge/1243877803.svg)](https://doi.org/10.5281/zenodo.20300225)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
 [![GitHub Release](https://img.shields.io/github/v/release/Joao-supera/SUP3RA-CORE-P-VS-NP-THE-NEXT-GENERATION)](https://github.com/Joao-supera/SUP3RA-CORE-P-VS-NP-THE-NEXT-GENERATION/releases)
 [![GitHub Stars](https://img.shields.io/github/stars/Joao-supera/SUP3RA-CORE-P-VS-NP-THE-NEXT-GENERATION?style=social)](https://github.com/Joao-supera/SUP3RA-CORE-P-VS-NP-THE-NEXT-GENERATION)
 
-<br>
-
 **DOI:** https://doi.org/10.5281/zenodo.20300225  
 **Repository:** https://github.com/Joao-supera/SUP3RA-CORE-P-VS-NP-THE-NEXT-GENERATION
-
-</div>
 
 ---
 
@@ -99,25 +91,58 @@ This repository is part of the broader **SUP3RA-CORE-P-VS-NP-THE-NEXT-GENERATION
 
 > A solution may be easy to verify while remaining fundamentally difficult to discover.
 
+This asymmetry underlies:
+
+- P versus NP;
+- SAT and proof complexity;
+- combinatorial optimization;
+- machine reasoning;
+- AI governance;
+- high-stakes decision support.
+
 ---
 
 ## 🛡️ Related Frameworks
 
 ### SUP3RA VECTRA™
 
-Framework for AI Governance and Responsible AI.
+Framework for AI Governance and Responsible AI designed to:
+
+- Reduce hallucinations;
+- Explicitly declare uncertainty;
+- Expose residual risks;
+- Preserve human autonomy;
+- Generate auditable outputs.
 
 ### Governability Score (GS)
 
-Quantitative metric for evaluating AI response governability.
+Quantitative metric for evaluating whether AI responses are operationally governable across dimensions such as:
+
+- Epistemic transparency;
+- Accountability;
+- Safety;
+- Actionability;
+- Human oversight.
 
 ### SUP3RA CORE Benchmark
 
-Adversarial benchmark with 150 tests.
+Adversarial benchmark with 150 tests covering:
+
+- Hallucination resistance;
+- Overconfidence;
+- Prompt injection;
+- Ethical boundary handling;
+- Domain-specific robustness.
 
 ### GDLE Core Engine
 
-Hybrid optimization architecture for NP-hard problems.
+Hybrid optimization architecture for NP-hard problems using:
+
+- Decomposition;
+- Exact solvers;
+- Heuristics;
+- Circuit breakers;
+- Observability.
 
 ---
 
@@ -129,13 +154,14 @@ SUP3RA-CORE-P-VS-NP-THE-NEXT-GENERATION/
 ├── Paper.pdf
 ├── README.md
 ├── CITATION.cff
-└── LICENSE
+├── LICENSE
+└── MANUAL-SUP3RA-CORE-P-VS-NP-THE-NEXT-GENERATION.pdf
 
 📥 Access the Paper
 📄 PDF: Paper.pdf
-📝 LaTeX source: paper.tex
+📝 LaTeX Source: paper.tex
 🔗 DOI: https://doi.org/10.5281/zenodo.20300225
-
+📚 Citation
 @misc{batista2026residual,
   author = {João Henrique de Souza Batista},
   title = {Residual Cut Entropy for Tseitin Formulas:
@@ -144,19 +170,21 @@ SUP3RA-CORE-P-VS-NP-THE-NEXT-GENERATION/
   doi = {10.5281/zenodo.20300225},
   url = {https://doi.org/10.5281/zenodo.20300225}
 }
-
 👤 Author
 
 João Henrique de Souza Batista
 Cognitive Architect of AI Systems
 Independent Researcher — Brazil
 
-LinkedIn: https://www.linkedin.com/in/joaohenriquedigital/
-GitHub: https://github.com/Joao-supera
-DOI: https://doi.org/10.5281/zenodo.20300225
+🌐 LinkedIn: https://www.linkedin.com/in/joaohenriquedigital/
+💻 GitHub: https://github.com/Joao-supera
+📄 DOI: https://doi.org/10.5281/zenodo.20300225
+📧 Email: jh.gti2026@gmail.com
 🔗 Related Resources
 SUP3RA VECTRA™ Benchmark
 https://github.com/Joao-supera/sup3ra-vectra-benchmark
+SUP3RA VECTRA™ DOI
+https://doi.org/10.5281/zenodo.18135699
 Professional Profile
 https://www.linkedin.com/in/joaohenriquedigital/
 📜 License
@@ -164,9 +192,14 @@ https://www.linkedin.com/in/joaohenriquedigital/
 This work is licensed under the
 Creative Commons Attribution 4.0 International License (CC BY 4.0).
 
-<div align="center">
 🚀 Research Vision
 
-Transforming theoretical limits into practical frameworks for governable AI and trustworthy decision systems.
+Transforming theoretical limits from computational complexity into practical frameworks for:
 
-</div> ```
+Governable AI;
+Model Risk Management;
+Decision Optimization;
+Benchmarking and Evaluation;
+Epistemically Transparent Cognitive Systems.
+
+The ultimate goal is not to eliminate uncertainty, but to make uncertainty explicit, measurable, and governable.
