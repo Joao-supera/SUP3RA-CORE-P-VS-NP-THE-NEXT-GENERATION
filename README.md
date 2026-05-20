@@ -7,8 +7,6 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18135699.svg)](https://doi.org/10.5281/zenodo.18135699)
 
 
-
-**DOI:** https://doi.org/10.5281/zenodo.20300225  
 **Repository:** https://github.com/Joao-supera/SUP3RA-CORE-P-VS-NP-THE-NEXT-GENERATION
 
 ---
