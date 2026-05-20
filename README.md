@@ -1,4 +1,4 @@
-# 📘 SUP3RA-CORE-P-VS-NP-THE-NEXT-GENERATION
+# 📘 SUP3RA-CORE-P-VS-NP-THE-NEXT-GENERATION™
 
 **Residual Cut Entropy for Tseitin Formulas:  
 An Information-Theoretic Perspective on Exponential OBDD Lower Bounds**
