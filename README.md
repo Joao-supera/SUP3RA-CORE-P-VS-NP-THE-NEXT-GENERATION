@@ -4,8 +4,8 @@
 
 ### An Information-Theoretic Perspective on Exponential OBDD Lower Bounds
 
-[![DOI](https://zenodo.org/badge/1243877803.svg)](https://doi.org/10.5281/zenodo.20300225)
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18135699.svg)](https://doi.org/10.5281/zenodo.18135699)
+
 
 
 **DOI:** https://doi.org/10.5281/zenodo.20300225  
