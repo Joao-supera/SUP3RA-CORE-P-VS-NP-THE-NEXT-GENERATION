@@ -1,24 +1,24 @@
 cff-version: 1.2.0
-message: "If you use this work, please cite it as follows."
+message: "If you use this work, please cite it."
 title: "Residual Cut Entropy for Tseitin Formulas: An Information-Theoretic Perspective on Exponential OBDD Lower Bounds"
-type: article
 
 authors:
   - family-names: "Batista"
-    given-names: "João Henrique de Souza"
+    given-names: "João Henrique de Souza Batista"
 
-date-released: 2026-05-19
-license: "CC-BY-4.0"
 doi: "10.5281/zenodo.20300226"
+date-released: "2026-05-19"
 
-repository-code: "https://github.com/Joao-supera/residual-cut-entropy"
 url: "https://github.com/Joao-supera/residual-cut-entropy"
+repository-code: "https://github.com/Joao-supera/residual-cut-entropy"
+
+license: "CC-BY-4.0"
 
 keywords:
-  - Boolean complexity
-  - OBDD
-  - Branching programs
-  - Tseitin formulas
-  - Lower bounds
-  - Information theory
-  - Entropy
+  - "Boolean complexity"
+  - "OBDD"
+  - "Branching programs"
+  - "Tseitin formulas"
+  - "Lower bounds"
+  - "Information theory"
+  - "Entropy"
